@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag('application') %>
+
+<div class="width-60 center">
+  <div class="container">
+    <h1>New task</h1>
+
+    <div class="container">
+      <%= render "form", task: @task %>
+    </div>
+
+    <br>
+
+    <div class="container">
+      <%= link_to "Back to tasks", tasks_path %>
+    </div>
+  </div>
+</div>
